@@ -1,0 +1,37 @@
+@import "materialize/materialize.scss";
+
+// Paleta de Colores:
+
+$primary: #263238;
+$accent: #03A9F4;
+
+/* HEADER
+================== */
+
+nav {
+    background-color: $primary;
+}
+
+.bg-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 64px);
+    
+    h1 {
+        color: #fff;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+}
+
+.parallax-container {
+    height: calc(100vh - 64px);
+    
+    & img {
+        width: 1000px;
+    }
+}
