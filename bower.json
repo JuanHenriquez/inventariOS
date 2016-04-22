@@ -1,0 +1,24 @@
+{
+  "name": "inventari_os",
+  "description": "inventariOS is a basic web application that keep track of the inventory of a store.",
+  "main": "app.js",
+  "authors": [
+    "Juan Henriquez",
+    "Samuel Alvarez",
+    "Manuel Perez",
+    "Gabriel Lugo",
+    "Carlos Guevara"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/JuanHenriquez/inventariOS",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Materialize": "materialize#^0.97.6"
+  }
+}
