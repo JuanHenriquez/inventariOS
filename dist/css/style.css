@@ -1,3 +1,38 @@
+@font-face {
+  font-family: 'cubano';
+  src: url("../fonts/cubano/cubano-regular-webfont.eot");
+  src: url("../fonts/cubano/cubano-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cubano/cubano-regular-webfont.woff2") format("woff2"), url("../fonts/cubano/cubano-regular-webfont.woff") format("woff"), url("../fonts/cubano/cubano-regular-webfont.ttf") format("truetype"), url("../fonts/cubano/cubano-regular-webfont.svg#cubanonormal") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/material-design-icons/Material-Design-Icons.eot);
+  /* For IE6-8 */
+  src: local("Material Icons"), local("Material-Design-Icons"), url(../fonts/material-design-icons/Material-Design-Icons.woff2) format("woff2"), url(../fonts/material-design-icons/Material-Design-Icons.woff) format("woff"), url(../fonts/material-design-icons/Material-Design-Icons.ttf) format("truetype"); }
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga'; }
+
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -6147,26 +6182,87 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
+main {
+  background-color: #f5f5f5; }
+
+.btn, .btn-large {
+  background-color: #263238; }
+
+.img-responsive {
+  max-width: 100%; }
+
+.section {
+  padding: 50px 0; }
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px; }
+  .section-title h2 {
+    font-size: 2.3em;
+    font-weight: 800; }
+  .section-title p {
+    font-size: 1.5em; }
+
 /* HEADER
 ================== */
 nav {
   background-color: #263238; }
 
 .bg-overlay {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100vh - 64px); }
+  height: 80vh;
+  text-align: center;
+  color: #fff;
+  z-index: 100; }
   .bg-overlay h1 {
-    color: #fff;
+    font-family: 'cubano', roboto, Helvetica, sans-serif;
+    margin-top: 100px;
+    font-size: 4em;
+    text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.6); }
+    .bg-overlay h1 span {
+      font-size: 5rem; }
+  .bg-overlay p {
     text-align: center;
-    margin-top: 50px; }
+    margin: 0 auto;
+    max-width: 90%; }
 
 .parallax-container {
-  height: calc(100vh - 64px); }
-  .parallax-container img {
-    width: 1000px; }
+  height: 70vh; }
+  .parallax-container .parallax {
+    z-index: 10; }
+    .parallax-container .parallax img {
+      width: 1000px; }
+
+@media (min-width: 670px) {
+  .bg-overlay h1 {
+    font-size: 5em; }
+
+  .bg-overlay h1 span {
+    font-size: 6.5rem; }
+
+  .bg-overlay p {
+    font-size: 1.3em; } }
+/* SECTION - About Us
+================== */
+.attribute-wrapper {
+  background-color: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+  margin: 20px 0; }
+  .attribute-wrapper img {
+    width: 180px; }
+  .attribute-wrapper h4 {
+    font-size: 1.8em; }
+
+@media (min-width: 990px) {
+  #about-us .section-title h2 {
+    font-size: 3em; }
+
+  #about-us .section-title p {
+    font-size: 1.2em; } }
 
 /*# sourceMappingURL=style.css.map */
