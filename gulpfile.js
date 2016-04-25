@@ -26,7 +26,7 @@ gulp.task('minCss', function() {
             console.log("The file " + details.name + "(" +  details.stats.originalSize + "kb)" + " has been compresed to " + details.stats.minifiedSize + "kb");
         }))
         .pipe(rename('style.min.css'))
-        .pipe(gulp.dest('./dist/css/'));
+        .pipe(gulp.dest('./dist/css/2.'));
 })
 
 gulp.task('minJs', function() {

@@ -1,5 +1,5 @@
 
-<?php include('inc/header.php') //Hola Juan :DD?>
+<?php include('inc/header.php') ?>
 
 <main>
     
