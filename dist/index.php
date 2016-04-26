@@ -165,19 +165,56 @@
                         </div> <!-- /.row -->
 
                     </div> <!-- /.section-content -->
-                    <div class="section" id="contact">
+                </div>
+            </div>
+        </div> <!-- /.container -->
+    </div> <!-- /#top-products -->
+    <div class="section" id="contact">
+        <div class="container">
+           <div class="row">
+                <div class="col s12">
+                    <div class="section-title">
+                        <h2>Contactanos</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit vel pariatur provident ab beatae, perferendis cumque, id adipisci ad dolores.</p>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="section-content">
                         <div class="row">
-                            <div class="col s12">
-                                <div class="section-title">
-                                    <h2>Contactanos</h2>
-                                </div>
+                            <div class="col s12 m6">
+                                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3926.311091494383!2d-67.96448323971464!3d10.236474457194456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sve!4v1461653044980" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                            <div class="col s12 m6">
+                                <form action="#" class="card" id="contact-form">
+                                    <div class="card-content">
+            
+                                        <div class="row">
+                                            <div class="col s12 input-field">
+                                                <input id="nombre" name="nombre" type="text" class="validate" required data-error="Coloque un nombre valido" pattern="[a-zA-Z\s]+">
+                                                <label for="last_name">Nombre</label>
+                                            </div>
+                                            <div class="col s12 input-field">
+                                                <input id="correo" name="correo" type="email" class="validate" required data-error="Coloque un correo valido" pattern="^([\w_\.\-])+\@(([\w\-])+\.)+([a-zA-Z0-9]{2,4})$" title="example@domain.com">
+                                                <label for="last_name">E-mail</label>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <textarea id="mensaje" name="mensaje" class="materialize-textarea" required></textarea>
+                                                <label for="mensaje">Observaciones</label>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <button type="submit" class="waves-effect btn">Enviar</button>
+                                            </div>
+                                        </div><!-- /.row -->
+            
+                                    </div> <!-- /.card-content -->
+                                </form> <!-- / #contact-form -->
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </div> <!-- /.row -->
+        </div> <!-- /.container -->
+    </div> <!-- /#contact -->
     
 </main>
 
