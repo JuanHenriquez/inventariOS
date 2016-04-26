@@ -19,7 +19,7 @@ gulp.task('update', function(){
     
 });
 
-gulp.task('sass', function(){
+gulp.task('sassMain', function(){
     console.log("Scss compilado.");
     gulp.src('./dist/css/style.scss')
         .pipe(sass().on('error', sass.logError))
@@ -27,6 +27,28 @@ gulp.task('sass', function(){
             console.log("The file " + details.name + "(" +  details.stats.originalSize + "kb)" + " has been compresed to " + details.stats.minifiedSize + "kb");
         }))
         .pipe(rename('style.min.css'))
+        .pipe(gulp.dest('./dist/css'))
+});
+
+gulp.task('sassAdmin', function(){
+    console.log("Scss compilado.");
+    gulp.src('./dist/css/style-admin.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(minifyCSS({debug: true}, function(details){
+            console.log("The file " + details.name + "(" +  details.stats.originalSize + "kb)" + " has been compresed to " + details.stats.minifiedSize + "kb");
+        }))
+        .pipe(rename('style-admin.min.css'))
+        .pipe(gulp.dest('./dist/css'))
+});
+
+gulp.task('sassProducts', function(){
+    console.log("Scss compilado.");
+    gulp.src('./dist/css/style-products.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(minifyCSS({debug: true}, function(details){
+            console.log("The file " + details.name + "(" +  details.stats.originalSize + "kb)" + " has been compresed to " + details.stats.minifiedSize + "kb");
+        }))
+        .pipe(rename('style-products.min.css'))
         .pipe(gulp.dest('./dist/css'))
 });
 
@@ -43,6 +65,6 @@ gulp.task('minJs', function() {
 gulp.task('watch', function() {
     
     gulp.watch('./dist/js/app.js', ['minJs']);
-    gulp.watch('./dist/css/style.scss', ['sass']);
+    gulp.watch('./dist/css/*.scss', ['sassMain', 'sassAdmin', 'sassProducts']);
     
 })
