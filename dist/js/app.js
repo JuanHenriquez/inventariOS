@@ -3,6 +3,8 @@
     // Materialize Plugins
     $('.parallax').parallax();
     $(".button-collapse").sideNav();
+    $('select').material_select();
+    
     
     // OWL Carousel Plugin
     $(".owl-carousel").owlCarousel({
