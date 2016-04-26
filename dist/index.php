@@ -50,6 +50,129 @@
                                 </div>
                             </div>
                         </div>
+                    </div> <!-- /.section-content -->
+                </div>
+            </div>
+        </div>
+    </div> <!-- /.section #about-us -->
+    <div class="section" id="top-products">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="section-title">
+                        <h2>Productos Destacados</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, a, animi dolore ut saepe ratione.</p>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="section-content">
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="owl-carousel">
+
+                                    <div class="card card-product">
+                                        <div class="card-image waves-effect waves-block waves-light">
+                                            <img class="activator" src="img/img-product.jpg">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                            <p><a href="#">This is a link</a></p>
+                                        </div>
+                                        <div class="card-reveal">
+                                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                        </div>
+                                    </div> <!-- /.card-product -->
+
+                                    <div class="card card-product">
+                                        <div class="card-image waves-effect waves-block waves-light">
+                                            <img class="activator" src="img/img-product2.jpg">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                            <p><a href="#">This is a link</a></p>
+                                        </div>
+                                        <div class="card-reveal">
+                                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                        </div>
+                                    </div> <!-- /.card-product -->
+
+                                    <div class="card card-product">
+                                        <div class="card-image waves-effect waves-block waves-light">
+                                            <img class="activator" src="img/img-product3.jpg">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                            <p><a href="#">This is a link</a></p>
+                                        </div>
+                                        <div class="card-reveal">
+                                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                        </div>
+                                    </div> <!-- /.card-product -->
+
+                                    <div class="card card-product">
+                                        <div class="card-image waves-effect waves-block waves-light">
+                                            <img class="activator" src="img/img-product.jpg">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                            <p><a href="#">This is a link</a></p>
+                                        </div>
+                                        <div class="card-reveal">
+                                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                        </div>
+                                    </div> <!-- /.card-product -->
+
+                                    <div class="card card-product">
+                                        <div class="card-image waves-effect waves-block waves-light">
+                                            <img class="activator" src="img/img-product2.jpg">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                            <p><a href="#">This is a link</a></p>
+                                        </div>
+                                        <div class="card-reveal">
+                                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                        </div>
+                                    </div> <!-- /.card-product -->
+
+                                    <div class="card card-product">
+                                        <div class="card-image waves-effect waves-block waves-light">
+                                            <img class="activator" src="img/img-product3.jpg">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                            <p><a href="#">This is a link</a></p>
+                                        </div>
+                                        <div class="card-reveal">
+                                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                        </div>
+                                    </div> <!-- /.card-product -->
+
+                                </div> <!-- /.owl-carousel -->
+                            </div> <!-- /.col -->
+                            <div class="col s12">
+                                <div id="slider-btn">
+                                    <a class="btn-floating btn-large waves-effect waves-light" id="btn-left"><i class="material-icons">keyboard_arrow_left</i></a>
+                                    <a class="btn-floating btn-large waves-effect waves-light" id="btn-right"><i class="material-icons">keyboard_arrow_right</i></a>
+                                </div>
+                            </div>
+                        </div> <!-- /.row -->
+
+                    </div> <!-- /.section-content -->
+                    <div class="section" id="contact">
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="section-title">
+                                    <h2>Contactanos</h2>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
