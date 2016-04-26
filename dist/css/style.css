@@ -6245,6 +6245,7 @@ nav {
     font-size: 6.5rem; }
 
   .bg-overlay p {
+    max-width: 60%;
     font-size: 1.3em; } }
 /* SECTION - About Us
 ================== */
@@ -6264,5 +6265,22 @@ nav {
 
   #about-us .section-title p {
     font-size: 1.2em; } }
+/* SECTION - Top Products
+=============================== */
+#top-products {
+  background-color: #263238; }
+  #top-products .section-title {
+    color: #fff; }
+
+#slider-btn {
+  text-align: center; }
+
+#slider-btn a.btn-floating {
+  background-color: #03A9F4;
+  margin: 20px; }
+
+.card.card-product {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px; }
 
 /*# sourceMappingURL=style.css.map */
