@@ -2,3 +2,5 @@ bower_components
 dist/css/style.css.map
 dist/css/.sass-cache/**
 .c9
+node_modules
+.DS_Store
