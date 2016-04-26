@@ -1,6 +1,26 @@
-        <footer>
-            <h5>Esto estan en el footer.</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, optio, voluptatum, deserunt, ratione saepe vero exercitationem fugit distinctio accusantium ullam soluta atque ex aperiam doloremque id eos quo voluptatibus quisquam laborum laudantium harum voluptatem nam officia excepturi error numquam officiis! Aspernatur, doloremque, nobis, iste nesciunt architecto quod quidem ab dolore maxime labore voluptatem debitis minima facilis? Quod, et, cupiditate, culpa, repellendus natus distinctio debitis libero aperiam ad soluta animi maiores molestiae earum sequi iusto deleniti quis dolorum saepe maxime cum reprehenderit aspernatur aliquam dolorem harum eligendi dignissimos architecto quo expedita tempora voluptatum omnis quaerat alias cumque autem aut minus laborum.</p>
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">InventariOS</h5>
+                        <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sit.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!">Blog</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Products</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Faq</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2016 Copyright Text
+                </div>
+            </div>
         </footer>
         
     </section>
