@@ -1,0 +1,27 @@
+{
+  "name": "inventarios",
+  "version": "1.0.0",
+  "description": "inventariOS is a basic web application that keep track of the inventory of a store.",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.6",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-uglify": "^1.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanHenriquez/inventariOS.git"
+  },
+  "author": "Juan Henriquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanHenriquez/inventariOS/issues"
+  },
+  "homepage": "https://github.com/JuanHenriquez/inventariOS#readme"
+}

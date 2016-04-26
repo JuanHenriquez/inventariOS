@@ -3,7 +3,8 @@
 var gulp      = require("gulp"),
     rename    = require("gulp-rename"),
     minifyCSS = require("gulp-clean-css"),
-    minifyJS  = require("gulp-uglify");
+    minifyJS  = require("gulp-uglify"),
+    sass      = require("gulp-sass");
     
 gulp.task('update', function(){
     
@@ -18,16 +19,16 @@ gulp.task('update', function(){
     
 });
 
-gulp.task('minCss', function() {
-    
-    console.log('Se ha minificado style.css');
-    gulp.src('./dist/css/style.css')
+gulp.task('sass', function(){
+    console.log("Scss compilado.");
+    gulp.src('./dist/css/style.scss')
+        .pipe(sass().on('error', sass.logError))
         .pipe(minifyCSS({debug: true}, function(details){
             console.log("The file " + details.name + "(" +  details.stats.originalSize + "kb)" + " has been compresed to " + details.stats.minifiedSize + "kb");
         }))
         .pipe(rename('style.min.css'))
-        .pipe(gulp.dest('./dist/css/'));
-})
+        .pipe(gulp.dest('./dist/css'))
+});
 
 gulp.task('minJs', function() {
     
@@ -42,6 +43,6 @@ gulp.task('minJs', function() {
 gulp.task('watch', function() {
     
     gulp.watch('./dist/js/app.js', ['minJs']);
-    gulp.watch('./dist/css/style.scss', ['minCss']);
+    gulp.watch('./dist/css/style.scss', ['sass']);
     
 })
