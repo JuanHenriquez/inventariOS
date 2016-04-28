@@ -6,24 +6,23 @@
         </tr>
     </thead>
 
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>Xbox One</td>
-            <td><a href="#" class="btn waves-effect">Update</a></td>
-            <td><a href="#" class="btn waves-effect">Delete</a></td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>PS4</td>
-            <td><a href="#" class="btn waves-effect">Update</a></td>
-            <td><a href="#" class="btn waves-effect">Delete</a></td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Wii</td>
-            <td><a href="#" class="btn waves-effect">Update</a></td>
-            <td><a href="#" class="btn waves-effect">Delete</a></td>
-        </tr>
+    <tbody id="table-warehouse">
+        <?php
+
+            $v = array();
+            $v = almacen::readAlmacen();
+            $cont = 1;
+
+            foreach( $v as $item ){
+
+        ?>
+            <tr class="item-row">
+                <td class="id-number"><?php echo $cont ?></td>
+                <td class="id-nombre"><?php echo $item->nombre ?></td>
+                <td class="id-table-warehouse"><?php echo $item->id ?></td>
+                <td><a href="#" class="btn waves-effect btn-update-warehouse">Update</a></td>
+                <td><a href="#" class="btn waves-effect btn-delete-warehouse">Delete</a></td>
+            </tr
+        <?php $cont++; } ?>
     </tbody>
 </table>

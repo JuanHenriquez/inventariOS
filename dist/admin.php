@@ -38,6 +38,7 @@
 
         <?php include('inc/footer.php') ?>
         <script src="./views/agregar/agregar.js"></script>
+        <script src="views/agregar/actualizar.js"></script>
     </div>
 </main>
 

@@ -54,3 +54,13 @@ footer.page-footer {
     bottom: 0;
     right: 0;
 }
+
+#btn_product_update,
+#btn_warehouse_update {
+    display: none;
+}
+
+.id-table-product,
+.id-table-warehouse{
+    display: none;
+}
