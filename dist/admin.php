@@ -18,11 +18,11 @@
         <div class="row">
             <div class="col s12">
                 <?php 
-                    if($_GET['panel'] == "add"){
+                    if(isset($_GET['panel']) && $_GET['panel'] == "add"){
                         include('views/agregar/index.php');
-                    }else if($_GET['panel'] == "stock") {
+                    }else if(isset($_GET['panel']) && $_GET['panel'] == "stock") {
                         include('views/inventario/index.php');
-                    }else if($_GET['panel'] == "sales"){
+                    }else if(isset($_GET['panel']) && $_GET['panel'] == "sales"){
                         include('views/ventas/index.php');
                     }else {
                         
@@ -37,6 +37,7 @@
         </div>
 
         <?php include('inc/footer.php') ?>
+        <script src="./views/agregar/agregar.js"></script>
     </div>
 </main>
 

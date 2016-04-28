@@ -14,7 +14,7 @@
             <td>California</td>
             <td>10</td>
             <td>$299</td>
-            <td><a href="#" class="btn waves-effect">Update</a></td>
+            <td><a href="admin.php?panel=stock&action=update" class="btn waves-effect">Update</a></td>
             <td><a href="#" class="btn waves-effect">Delete</a></td>
         </tr>
         <tr>

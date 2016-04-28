@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="css/owl.carousel.css"/>
     <link rel="stylesheet" href="css/style.min.css"/>
     
-    <?php if($pageTitle == "admin"): ?>
+    <?php if(isset($pageTitle) && $pageTitle == "admin"): ?>
     <link rel="stylesheet" href="css/style-admin.min.css"/>
-    <?php elseif($pageTitle == "products"): ?>
+    <?php elseif(isset($pageTitle) && $pageTitle == "products"): ?>
     <link rel="stylesheet" href="css/style-products.min.css"/>
     <?php endif; ?>
     
@@ -23,14 +23,14 @@
             <div class="navbar-fixed">
                 <nav>
                     <div class="nav-wrapper container">
-                        <a href="#!" class="brand-logo">InventariOS</a>
+                        <a href="index.php" class="brand-logo">InventariOS</a>
                         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                         <ul class="right hide-on-med-and-down">
-                            <li><a href="#">Productos</a></li>
+                            <li><a href="products.php">Productos</a></li>
                             <li><a href="admin.php">Panel de Administración</a></li>
                         </ul>
                         <ul class="side-nav" id="mobile-demo">
-                            <li><a href="#">Productos</a></li>
+                            <li><a href="products.php">Productos</a></li>
                             <li><a href="admin.php" data-activates="dropdown">Panel de Administración</a></li>
                             <?php if($pageTitle == "admin"): ?>
                                 <li class="divider"></li>
@@ -39,7 +39,7 @@
                                     <li><a href="admin.php?panel=add">Add</a></li>
                                     <li><a href="admin.php?panel=sales">Sales</a></li>
                                 </ul>
-                            <? endif; ?>
+                            <?php endif; ?>
                         </ul>
                     </div>
                 </nav>
