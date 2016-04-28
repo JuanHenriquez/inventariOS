@@ -1,9 +1,8 @@
 $(document).ready(function(){
 
     // Save Button for products.
-    $('#btn_product').click(function(e){
+    $('#form_product').submit(function(e){
         e.preventDefault();
-
         var form = $('#form_product'),
             nombreInput = $('#nombreP'),
             precioInput = $('#precioP');
@@ -22,15 +21,20 @@ $(document).ready(function(){
 
                 var table = $('#table-products'),
                     lastRow = table.children().last(),
-                    lastNumberId = parseInt(lastRow.find('.id-number').last().html());
+                    lastNumberId = (lastRow.find('.id-number').length) ? parseInt(lastRow.find('.id-number').last().html()) + 1 : lastNumberId = 1;
 
-                var template  = '<td class="id-number">' + (lastNumberId + 1) + '</td>';
+                var template  = '<tr class="item-row"><td class="id-number">' + lastNumberId + '</td>';
                     template += '<td>' + nombreInput.val() + '</td>';
                     template += '<td>$' + precioInput.val() + '</td>';
                     template += '<td><a href="" class="btn waves-effect btn-update-product">Update</a></td>';
-                    template += '<td><a href="" class="btn waves-effect btn-delete-product">Delete</a></td>';
+                    template += '<td><a href="" class="btn waves-effect btn-delete-product">Delete</a></td></tr>';
 
-                lastRow.after(template);
+                if(lastRow.length == 0){
+                    table.append(template);
+                }else {
+                    lastRow.after(template);
+
+                }
 
                 nombreInput.val("");
                 precioInput.val(0);
@@ -42,7 +46,7 @@ $(document).ready(function(){
     });
 
     // Save Button for Warehouse.
-    $('#btn_warehouse').click(function(e){
+    $('#form_warehouse').submit(function(e){
         e.preventDefault();
 
         var form = $('#form_warehouse'),
@@ -61,14 +65,19 @@ $(document).ready(function(){
 
                 var table = $('#table-warehouse'),
                     lastRow = table.children().last(),
-                    lastNumberId = parseInt(lastRow.find('.id-number').last().html());
+                    lastNumberId = (lastRow.find('.id-number').length) ? parseInt(lastRow.find('.id-number').last().html()) + 1 : lastNumberId = 1;
 
-                var template  = '<td class="id-number">' + (lastNumberId + 1) + '</td>';
+                var template  = '<tr class="item-row"><td class="id-number">' + lastNumberId + '</td>';
                     template += '<td>' + nombreInput.val() + '</td>';
-                    template += '<td><a href="" class="btn waves-effect btn-update-product">Update</a></td>';
-                    template += '<td><a href="" class="btn waves-effect btn-delete-product">Delete</a></td>';
+                    template += '<td><a href="" class="btn waves-effect btn-update-warehouse">Update</a></td>';
+                    template += '<td><a href="" class="btn waves-effect btn-delete-warehouse">Delete</a></td></tr>';
 
-                lastRow.after(template);
+                if(lastRow.length == 0){
+                    table.append(template);
+                }else {
+                    lastRow.after(template);
+
+                }
 
                 nombreInput.val("");
             }
