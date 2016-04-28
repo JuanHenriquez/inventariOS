@@ -4,26 +4,25 @@
             <th data-field="name">Name</th>
             <th data-field="warehouse">Warehouse</th>
             <th data-field="quanty">Quanty</th>
-            <th data-field="price">Price</th>
         </tr>
     </thead>
 
-    <tbody>
-        <tr>
-            <td>Xbox One</td>
-            <td>California</td>
-            <td>10</td>
-            <td>$299</td>
-            <td><a href="admin.php?panel=stock&action=update" class="btn waves-effect">Update</a></td>
-            <td><a href="#" class="btn waves-effect">Delete</a></td>
+    <tbody id="table-inventario">
+        <?php
+
+            $v = array();
+            $v = inventario::readInventario();
+
+            foreach( $v as $item ){
+
+        ?>
+        <tr class="item-row">
+            <td class="id-nombre"><?php echo $item->producto ;?></td>
+            <td class="id-almacen"><?php echo $item->almacen;?></td>
+            <td class="id-cantidad"><?php echo $item->cantidad;?></td>
+            <td><a href="a#" class="btn waves-effect btn-update-inventario">Update</a></td>
+            <td><a href="#" class="btn waves-effect btn-delete-inventario">Delete</a></td>
         </tr>
-        <tr>
-            <td>PS4</td>
-            <td>New York</td>
-            <td>40</td>
-            <td>$399</td>
-            <td><a href="#" class="btn waves-effect">Update</a></td>
-            <td><a href="#" class="btn waves-effect">Delete</a></td>
-        </tr>
+        <?php  } ?>
     </tbody>
 </table>
