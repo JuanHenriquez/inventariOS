@@ -1,5 +1,5 @@
 <?php 
-
+    require('conection.php');
     $pageTitle = "admin";
 
 ?>
