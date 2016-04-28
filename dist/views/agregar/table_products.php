@@ -24,7 +24,7 @@
                 <td class="id-table-product"><?php echo $item->id ?></td>
                 <td><a href="#" class="btn waves-effect btn-update-product">Update</a></td>
                 <td><a href="#" class="btn waves-effect btn-delete-product">Delete</a></td>
-            </tr
+            </tr>
         <?php $cont++; } ?>
     </tbody>
 </table>
