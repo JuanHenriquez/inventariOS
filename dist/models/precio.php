@@ -56,20 +56,10 @@ class precio
 			return($itm['id_precio']);
 		} else {
 			precio::crePrecio($pre);
-			return(0);
+			return( $db->lastInsertId() );
 		}
 	}
 
-    public static function lastItem(){
-
-        $db = Db::getInstance();
-        $req = $db->prepare('SELECT * From precio');
-        $req->execute();
-        $lastItem = $db->lastInsertId();
-
-        return $lastItem;
-
-    }
 }
 
 ?>
