@@ -22,7 +22,7 @@
                 <td class="id-table-warehouse"><?php echo $item->id ?></td>
                 <td><a href="#" class="btn waves-effect btn-update-warehouse">Update</a></td>
                 <td><a href="#" class="btn waves-effect btn-delete-warehouse">Delete</a></td>
-            </tr
+            </tr>
         <?php $cont++; } ?>
     </tbody>
 </table>
