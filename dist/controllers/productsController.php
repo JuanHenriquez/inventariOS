@@ -10,11 +10,14 @@
     $idPrecio = precio::exisPrecio($precio);
 
     if($idPrecio == 0){
+
+        producto::creProduct($nombre, $idPrecio);
+
+    }else {
+
         $last = precio::lastItem();
         producto::creProduct($nombre, $last);
 
-    }else {
-        producto::creProduct($nombre, $idPrecio);
     }
 
 
