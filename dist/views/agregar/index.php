@@ -13,8 +13,8 @@
                         <label for="nombreA">Nombre del Almacen</label>
                     </div>
                     <div class="col s12 input-field right-align">
-                        <a class="waves-effect waves-light btn" id="btn_warehouse">Guardar</a>
-                        <a class="waves-effect waves-light btn" id="btn_warehouse_update" data-id="#">Guardar Cambios</a>
+                        <button type="submit" class="waves-effect waves-light btn" id="btn_warehouse">Guardar</button>
+                        <button type="submit" class="waves-effect waves-light btn" id="btn_warehouse_update" data-id="#">Guardar Cambios</button>
                     </div>
                 </div>
             </div>
@@ -35,12 +35,12 @@
                         <label for="last_name">Nombre del Producto</label>
                     </div>
                     <div class="col s12 input-field">
-                        <input placeholder="" id="precioP" name="precioP" type="number" class="validate" required data-error="Coloque un nombre valido" pattern="[a-zA-Z\s]+">
+                        <input placeholder="" id="precioP" name="precioP" type="number" class="validate" required data-error="Coloque un precio" pattern="[a-zA-Z\s]+">
                         <label for="last_name">Precio</label>
                     </div>
                     <div class="col s12 input-field right-align">
-                        <a class="waves-effect waves-light btn" id="btn_product">Guardar</a>
-                        <a class="waves-effect waves-light btn" id="btn_product_update" data-id="#">Guardar Cambios</a>
+                        <button type="submit" class="waves-effect waves-light btn" id="btn_product">Guardar</button>
+                        <button type="submit" class="waves-effect waves-light btn" id="btn_product_update" data-id="#">Guardar Cambios</button>
                     </div>
                 </div>
             </div>
