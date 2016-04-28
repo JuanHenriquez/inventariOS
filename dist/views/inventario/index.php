@@ -1,3 +1,8 @@
+<?php
+    require('models/producto.php');
+    require('models/almacen.php');
+    require('models/inventario.php');
+?>
 <div class="container">
     <div class="row">
         <div class="col s12">
@@ -5,15 +10,8 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, ipsa!</p>
         </div>
         <div class="col s12">
-            <?php
 
-                if( isset($_GET['action']) && $_GET['action'] == "update"){
-                    include('form_update.php');
-                }else {
-                    include('form_create.php');
-                }
-
-            ?>
+            <?php include('form.php'); ?>
 
         </div> <!-- /.col -->
         <div class="col s12">
