@@ -1,10 +1,10 @@
 <?php
 class inventario
 {
-	$id;
-	$almacen;
-	$producto;
-	$cantidad;
+	public $id;
+	public $almacen;
+	public $producto;
+	public $cantidad;
 
 	public function __construct($i, $alm, $prod, $cant)
 	{
@@ -50,7 +50,7 @@ class inventario
 		else
 		{
 			$req2 = $db->prepare('UPDATE r_almacen_producto SET cantidad = :num');
-			$req2->execute(':num' => $num);
+			$req2->execute(array(':num' => $num));
 			$msj = True;
 		}
 		return $msj;
